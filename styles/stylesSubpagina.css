@@ -1,0 +1,549 @@
+@font-face {
+    font-family: "NPOSansRegular";
+    src: url("../fonts/NPOSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "NPOSansBold";
+    src: url("../fonts/NPOSans-Bold.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "NPOSansRegular", sans-serif;
+    color: white;
+    text-decoration: none;
+    letter-spacing: -0.01rem;
+}
+
+/*---------------------------------
+
+    STYLES MOBIEL
+
+-----------------------------------*/
+header,
+main,
+footer {
+    background-color: #1F1F1F;
+    overflow-x: hidden;
+}
+
+main,
+footer {
+    padding: 1rem 2rem;
+}
+
+main {
+    font-size: 0.8rem;
+}
+
+header nav {
+    padding: 1rem;
+}
+
+header ul {
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+header ul li {
+    list-style: none;
+    padding: 0.5rem 0rem;
+    text-align: center;
+}
+
+header nav:nth-child(1) {
+    font-size: 1.2rem;
+}
+
+header nav:nth-child(2) {
+    font-size: 1.5rem;
+}
+
+header a img {
+    width: 3rem;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2rem;
+}
+
+header > section {
+    padding-top: 0.1vh;
+    padding-bottom: 6rem;
+    background-image: url(../images/Sluipschutters_groot.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    box-shadow: inset 250px 0px 120px -25px rgba(0, 0, 0, 1), inset -250px 0px 120px -25px rgba(0, 0, 0, 1);
+    height: 50%;
+    position: relative;
+}
+
+header section h1 {
+    font-family: "NPOSansBold", sans-serif;
+    font-size: 1.5rem;
+    margin-top: 10%;
+    margin-left: 0.5rem;
+    padding: 0rem 2rem;
+    text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.51);
+}
+
+header section p {
+    display: none;
+    font-size: 1.5rem;
+    margin: 1rem 0rem 1rem 5rem;
+    width: 50%;
+    text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.51);
+}
+
+header section a {
+    padding-left: 5rem;
+}
+
+
+#mobielnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+
+#mobielnavul {
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+#mobielnavul li a:hover {
+    cursor: pointer;
+    color: #FF6D00;
+}
+
+#hamburgerknop,
+#zoekknop {
+    border-style: none;
+    background-color: #1F1F1F;
+    display: flex;
+    flex-direction: row;
+    align-items: middle;
+    font-size: 1.2rem;
+    width: 5.5rem;
+    height: 1.5rem;
+}
+
+#hamburgerknop img {
+    padding-right: -5px;
+    height: 1.5rem;
+    width: auto;
+}
+
+#zoekknop img {
+    padding-right: 7px;
+    height: 1.3rem;
+    width: auto;
+}
+
+.active {
+    display: block;
+}
+
+.moveIn {
+    transition: 0.5s;
+    left: 0rem;
+}
+
+.moveOut {
+    transition: 0.5s;
+    left: 17rem;
+}
+
+main figure:nth-child(1) img {
+    height: 70vh;
+    width: auto;
+}
+
+main figure:nth-child(1) {
+    display: none;
+}
+
+main figure:nth-child(2) img {
+    height: 100vh;
+    width: auto;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer > div:nth-child(1) div {
+    padding-bottom: 2rem;
+}
+
+footer > div:nth-child(1) div ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+footer > div:nth-child(1) div ul li {
+    padding: 0.5rem 0.5rem 0.5rem 0rem;
+    color: #999999;
+}
+
+footer div div ul li,
+footer div div p {
+    font-size: 0.9rem;
+}
+
+footer p span {
+    color: #999999;
+    padding-right: 1rem;
+}
+
+footer > div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+}
+
+footer > div:nth-child(2) figure {
+    padding-right: 4rem;
+}
+
+/*------------------------------
+
+    STYLES DESKTOP NAVIGATIE
+
+--------------------------------*/
+header nav:nth-child(1) {
+    display: none;
+}
+
+header nav:nth-child(1) ul li a img {
+    display: block;
+    width: 75%;
+    height: auto;
+    padding-top: 0rem;
+}
+
+header nav:nth-child(1) ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem 1rem 0rem 1rem;
+}
+
+/*-------------------------------------------------------------------
+    Geanimeerde lijn onder de navigatie items gemaakt met behulp van: https://codepen.io/martinwolf/pen/eNNdme
+*/
+
+header nav:nth-child(1) ul li:not(:first-child) a {
+    margin-bottom: 5px;
+}
+
+header nav:nth-child(1) ul li:not(:first-child) a:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background: #FF6D00;
+    transition: width .3s;
+}
+
+header nav:nth-child(1) ul li a:hover:after {
+    width: 100%;
+}
+
+/*-----------------------------------------------------------------------*/
+
+header nav:nth-child(1) ul li:nth-child(9) a img {
+    height: 1.3rem;
+    width: auto;
+    padding-right: 1rem;
+}
+
+header nav:nth-child(1) ul li:nth-child(9) a span {
+    display: none;
+}
+
+header nav:nth-child(1) ul li:nth-child(10) button {
+    color: white;
+    border-style: none;
+    display: flex;
+    align-items: center;
+    background-color: Transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+header nav:nth-child(1) ul li:nth-child(10) button img {
+    padding-right: 1rem;
+    height: 1.5rem;
+    width: auto;
+}
+
+header nav:nth-child(1) ul li:nth-child(10) button span {
+    display: none;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    left: 17rem;
+}
+
+header div input {
+    height: 1.5rem;
+    width: 15rem;
+    font-size: 1rem;
+    font-family: "NPOSansRegular", sans-serif;
+    padding: 10px 0 10px 25px;
+    border-style: none;
+    border-bottom: 1.5px solid #FF6D00;
+    background-color: Transparent;
+    background-image: url(https://www.npostart.nl/images/asset_web_main-menu_search.svg);
+    background-repeat: no-repeat;
+    background-size: 1.2rem;
+}
+
+header > div button {
+    padding: 0;
+    height: 2rem;
+    width: 2rem;
+    background-color: transparent;
+    border-style: none;
+    cursor: pointer;
+}
+
+header > div button img {
+    background-color: transparent;
+    padding: 0;
+    height: 2rem;
+    width: 2rem;
+}
+
+header > section section {
+    display: none;
+}
+
+header > section section button {
+    position: absolute;
+    font-size: 1.4rem;
+    margin: 1rem 0rem 1rem 5rem;
+    padding: 0.3rem 2rem;
+    border-style: none;
+    border-radius: 5px;
+    border: 1px solid #1f1f1f;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in;
+}
+
+header > section section button:hover {
+    background-color: rgba(27, 27, 27, 0.1);
+}
+
+
+header section a {
+    display: none;
+}
+
+/*-------------------------------
+
+    BREAKING POINT MEDIA QUERIES
+
+--------------------------------*/
+@media screen and (min-width: 767px) {
+
+    main,
+    footer {
+        padding: 1rem 5rem;
+    }
+
+    header {
+        background-image: url(../images/Sluipschutters_groot.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        box-shadow: none;
+        box-shadow: inset 250px 0px 120px -25px rgba(0, 0, 0, 1), inset -250px 0px 120px -25px rgba(0, 0, 0, 1);
+        height: 50%;
+    }
+
+    header nav:nth-child(1) {
+        display: block;
+    }
+
+    header nav:nth-child(1) ul li:nth-child(3) {
+        border-bottom: 4px solid #FF6D00;
+    }
+
+    header > section {
+        background-image: none;
+        box-shadow: none;
+    }
+
+    header section h1 {
+        margin-left: 3rem;
+    }
+
+    #mobielnav {
+        display: none;
+    }
+
+    #mobielnavul {
+        display: none;
+    }
+
+    header a img {
+        display: none;
+    }
+
+    header section h1 {
+        font-size: 2rem;
+    }
+
+    main figure:nth-child(1) {
+        display: block;
+    }
+
+    main figure:nth-child(2) {
+        display: none;
+    }
+
+    footer {
+        padding-bottom: 2rem;
+    }
+
+    footer > div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer > div:nth-child(1) div ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 11rem;
+    }
+
+    footer div div ul li,
+    footer div div h2 {
+        font-size: 1rem;
+    }
+
+    footer > div:nth-child(1) div:nth-child(1) {
+        width: 33vw;
+    }
+
+    footer > div:nth-child(1) div:nth-child(2) {
+        width: 16.5vw;
+    }
+
+    footer > div:nth-child(1) div:nth-child(3) {
+        width: 27vw;
+    }
+
+    footer > div:nth-child(1) div:nth-child(4) {
+        width: 16.5vw;
+    }
+
+    footer div div:nth-child(3) ul,
+    footer div div:nth-child(4) ul {
+        height: 13rem;
+    }
+
+    footer > div:nth-child(2) {
+        padding-top: 3rem;
+    }
+
+    footer > div:nth-child(2) div p span {
+        font-size: 1.2rem;
+    }
+
+    footer div:nth-child(2) figure {
+        padding-left: 5rem;
+    }
+}
+
+@media screen and (min-width: 833px) {
+    footer div div ul li {
+        font-size: 1.2rem;
+    }
+
+    footer div div h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 998px) {
+    header section h1 {
+        font-size: 2.25rem;
+    }
+
+    header section p {
+        font-size: 1rem;
+    }
+
+    header section section {
+        display: flex;
+        flex-flow: row;
+        align-items: flex-start;
+    }
+
+    header nav:nth-child(1) ul li {
+        font-size: 1.5rem;
+    }
+
+    header nav:nth-child(1) ul li:nth-child(9) a {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    header nav:nth-child(1) ul li:nth-child(9) a span {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    header section h1 {
+        font-size: 3rem;
+    }
+
+    header section p {
+        display: block;
+    }
+
+    header section a {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1279px) {
+    header nav:nth-child(1) ul li:nth-child(10) button span {
+        display: block;
+    }
+
+    header nav:nth-child(1) ul li a img {
+        height: 100%;
+        width: auto;
+    }
+
+    @media screen and (min-width: 1370px) {
+        header section p {
+            font-size: 1.4rem;
+        }
+
+        header section a {
+            font-size: 1.4rem;
+        }
+    }
