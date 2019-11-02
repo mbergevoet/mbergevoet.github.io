@@ -76,10 +76,10 @@ header a img {
 header section {
     padding-top: 0.1vh;
     padding-bottom: 10rem;
-    background-image: url(../images/FaroeBanner.png);
+    background-image: url(../images/FaroeBanner2.png);
     background-size: 100vw;
     background-repeat: no-repeat;
-    box-shadow: inset 250px 0px 120px -25px rgba(0, 0, 0, 1), inset -250px 0px 120px -25px rgba(0, 0, 0, 1);
+    box-shadow: inset 100px 0px 100px -25px rgba(0, 0, 0, 1), inset -100px 0px 100px -25px rgba(0, 0, 0, 1);
     height: 50%;
     position: relative;
 }
@@ -149,16 +149,36 @@ main div div div figure figcaption {
     display: block;
 }
 
-.moveIn{
+.moveIn {
     transition: 0.5s;
     left: 0rem;
 }
 
-.moveOut{
+.moveOut {
     transition: 0.5s;
-    left: 17rem;
+    left: 18rem;
 }
 
+/*-----------------------------------------------------
+
+        STYLES VOOR MOBIELE HEADER VAN DE SUB PAGINA
+
+-------------------------------------------------------*/
+
+#tweedespotlight {
+    background-image: url(../images/Sluipschutters_groot.jpg);
+}
+
+#tweedespotlight a {
+    padding-left: 2.5rem;
+}
+
+
+#tweedespotlight div button {
+    display: none;
+}
+
+/*-----------------------------------------------------*/
 main div:not(:nth-child(4)) div {
     display: flex;
     flex-direction: row;
@@ -259,6 +279,125 @@ main div:nth-child(4) div p {
     transform: translateX(-50%);
     text-shadow: 0 2px 4px rgba(0, 0, 0, .6);
 }
+
+main div:nth-child(7) {
+    font-size: 1rem;
+    margin: 6rem 0rem;
+    padding: 3rem;
+    border-bottom: 1.5px solid #525252;
+    border-top: 1.5px solid #525252;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+main div:nth-child(7) form {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1rem;
+}
+
+main div:nth-child(7) form input {
+    font-size: 1rem;
+    color: white;
+    margin: 0rem 0.5rem;
+    padding-left: 0.5rem;
+    background-color: #1f1f1f;
+    border-style: none;
+    border: 2px solid #525252;
+    border-radius: 5px;
+}
+
+main div:nth-child(7) form label {
+    font-family: "NPOSansBold", sans-serif;
+}
+
+main div:nth-child(7) form button {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    padding: 0.2rem 0.7rem;
+    background-color: #FF6D00;
+    border-style: none;
+    border-radius: 5px;
+}
+
+main div:nth-child(7) form button img {
+    padding-left: 0.5rem;
+    width: 1.5rem;
+    height: auto;
+}
+
+/*-----------------------------------------------------
+
+        STYLES VOOR MOBIELE MAIN VAN DE SUB PAGINA
+*/
+
+#tweedemain ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
+
+#tweedemain ul li {
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+#tweedemain ul li:nth-child(2) {
+    border-bottom: 3px solid #FF6D00;
+}
+
+#tweedemain ul li:not(:nth-child(2)) {
+    color: #525252;
+}
+
+#tweedemain form select {
+    color: #999999;
+    background: #1f1f1f;
+    border-color: #999999;
+    font-size: 1.2rem;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    margin: 2rem 0rem 0.5rem 0.5rem;
+}
+
+#tweedemain div {
+    display: flex;
+    flex-direction: column;
+}
+
+#tweedemain div figure {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1rem;
+}
+
+#tweedemain div figure figcaption {
+    font-size: 1rem;
+}
+
+#tweedemain div figure figcaption p {
+    padding-left: 1rem;
+}
+
+#tweedemain div figure figcaption p:first-child {
+    padding-top: 1rem;
+}
+
+#tweedemain div figure figcaption p:last-child {
+    color: #99998E;
+    font-size: 0.9rem;
+}
+
+#tweedemain div figure img {
+    width: 10rem;
+    height: auto;
+}
+
+/*----------------------------------------------------------*/
 
 footer {
     display: flex;
@@ -375,7 +514,7 @@ header nav:nth-child(1) ul li:nth-child(10) button img {
     width: auto;
 }
 
-header nav:nth-child(1) ul li:nth-child(10) button span{
+header nav:nth-child(1) ul li:nth-child(10) button span {
     display: none;
 }
 
@@ -384,7 +523,7 @@ header div {
     align-items: center;
     justify-content: flex-end;
     position: relative;
-    left: 17rem;
+    left: 18rem;
 }
 
 header div input {
@@ -434,6 +573,7 @@ header section button:hover {
     font-size: 1.6rem;
 
 }
+
 /*-------------------------------
 
     BREAKING POINT MEDIA QUERIES
@@ -484,6 +624,20 @@ header section button:hover {
         font-size: 2rem;
     }
 
+    /* MEDIA QUERIES STYLES TWEEDE HEADER */
+
+    #tweedeheader {
+        background-image: url(../images/Sluipschutters_groot.jpg);
+    }
+
+    #tweedespotlight {
+        background-image: none;
+    }
+
+    #tweedespotlight a {
+        padding-left: 5rem;
+    }
+
     main div:not(:nth-child(4)) div figure img {
         width: 20rem;
     }
@@ -498,6 +652,13 @@ header section button:hover {
 
     main div:nth-child(4) {
         margin-bottom: 3rem;
+    }
+
+    #tweedemain div {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
     }
 
     footer {
@@ -565,6 +726,40 @@ header section button:hover {
     }
 }
 
+/*MEDIA QUERY OM VOOR DE TWEEDE MAIN*/
+
+@media screen and (min-width: 896px) {
+
+    #tweedemain div figure {
+        display: block;
+        height: auto;
+        width: 22rem;
+        margin: 0.5rem;
+    }
+
+    #tweedemain div figure img {
+        width: 22rem;
+        height: auto;
+    }
+
+    #tweedemain div figure figcaption {
+        font-size: 1.2rem;
+        width: 27ch;
+    }
+
+    #tweedemain div figure figcaption p {
+        padding-left: 0;
+    }
+
+    #tweedemain div figure figcaption p:first-child {
+        padding-top: 0;
+    }
+
+    #tweedemain ul li {
+        font-size: 1.5rem;
+    }
+}
+
 @media screen and (min-width: 998px) {
     header section h1 {
         font-size: 2.25rem;
@@ -582,7 +777,7 @@ header section button:hover {
         font-size: 1.5rem;
     }
 
-    header nav:nth-child(1) ul li:nth-child(9) a{
+    header nav:nth-child(1) ul li:nth-child(9) a {
         display: flex;
         flex-direction: row;
         align-items: baseline;
@@ -591,6 +786,33 @@ header section button:hover {
     header nav:nth-child(1) ul li:nth-child(9) a span {
         display: block;
     }
+
+    #tweedespotlight div button {
+        display: block;
+        background-color: red;
+    }
+
+}
+
+@media screen and (min-width: 1010px) {
+    main div:nth-child(7) {
+        font-size: 1.5rem;
+    }
+
+
+    main div:nth-child(7) form button {
+        font-size: 1.5rem;
+    }
+
+    main div:nth-child(7) form input {
+        font-size: 1.5rem;
+    }
+
+    main div:nth-child(7) form button img {
+        height: auto;
+        width: 2rem;
+    }
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -598,7 +820,7 @@ header section button:hover {
         font-size: 3rem;
     }
 
-    header section p{
+    header section p {
         display: block;
     }
 
@@ -637,18 +859,38 @@ header section button:hover {
     }
 }
 
-@media screen and (min-width: 1279px){
-    header nav:nth-child(1) ul li:nth-child(10) button span{
+@media screen and (min-width: 1279px) {
+    header nav:nth-child(1) ul li:nth-child(10) button span {
         display: block;
     }
 
-    header nav:nth-child(1) ul li a img{
+    header nav:nth-child(1) ul li a img {
         height: 100%;
-         width: auto;
+        width: auto;
     }
 
-@media screen and (min-width: 1370px) {
-        header section p {
-            font-size: 1.4rem;
-        }
+}
+
+@media screen and (min-width: 1300px) {
+
+    #tweedemain div figure {
+        height: auto;
+        width: 15.5rem;
     }
+
+    #tweedemain div figure img {
+        width: 15.5rem;
+        height: auto;
+    }
+
+    #tweedemain div figure figcaption {
+        width: 20ch;
+    }
+
+}
+
+@media screen and (min-width: 1370px) {
+    header section p {
+        font-size: 1.4rem;
+    }
+}

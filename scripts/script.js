@@ -156,6 +156,9 @@ function scrollLeft5() {
 
 menuButton.addEventListener("click", uitklappen);
 
+knopZoeken.addEventListener("click", schuifUit);
+knopZoekenAnnuleren.addEventListener("click", schuifIn);
+
 buttonOne.addEventListener("click", scrollLeft1);
 buttonTwo.addEventListener("click", scrollRight1);
 buttonThree.addEventListener("click", scrollLeft2);
@@ -166,9 +169,6 @@ buttonSeven.addEventListener("click", scrollLeft4);
 buttonEight.addEventListener("click", scrollRight4);
 buttonNine.addEventListener("click", scrollLeft5);
 buttonTen.addEventListener("click", scrollRight5);
-
-knopZoeken.addEventListener("click", schuifUit);
-knopZoekenAnnuleren.addEventListener("click", schuifIn);
 
 //zoekenKnop.addEventListener("click", wordOnzichtbaar);
 //zoekenAnnulerenKnop.addEventListener("click", wordZichtbaar)

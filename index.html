@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
-            Het beste van NPO vind je op NPO Start
+        Het beste van NPO vind je op NPO Start
     </title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" type="image/png" href="images/npo-logo-32x32.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
 </head>
+
 <body>
     <header>
+        <!--De desktop navigatie-->
         <nav>
             <ul>
                 <li><a href="index.html"><img src="images/npo-logo.png" alt="npo logo"></a></li>
@@ -35,25 +37,31 @@
                 </li>
             </ul>
         </nav>
+        <!--De zoekbalk die buiten beeld is gepositioneerd-->
         <div id="zoekbalk">
-            <input type="text" placeholder="Zoeken">
-            <button type="button" id="annuleerKnop"><img src="images/close.svg" alt=""></button>
+            <form action="index.html">
+                <input type="text" placeholder="Zoeken">
+                <button type="button" id="annuleerKnop"><img src="images/close.svg" alt=""></button>
+            </form>
         </div>
         <a href="index.html"><img src="images/npo-logo.png" alt="npo logo"></a>
+        <!--De mobiele navigatie met daarin twee knoppen-->
         <nav id="mobielnav">
             <button type="button" id="hamburgerknop">
-               <img src="images/menu.svg" alt="">Menu
+                <img src="images/menu.svg" alt="">Menu
             </button>
             <button type="button" id="zoekknop">
                 <img src="images/search_icon.svg" alt="">Zoeken
             </button>
         </nav>
+        <!--Het hamburger menu dat uitklapt-->
         <ul id="mobielnavul">
-            <li><a href="">Live</a></li>
-            <li><a href="">Programma's</a></li>
-            <li><a href="">Gids</a></li>
-            <li><a href="">Kind</a></li>
+            <li><a href="index.html">Live</a></li>
+            <li><a href="programma.html">Programma's</a></li>
+            <li><a href="index.html">Gids</a></li>
+            <li><a href="index.html">Kind</a></li>
         </ul>
+        <!--De spotlight tekst die het meeste recente programma introduceerd-->
         <section>
             <h1>
                 Documantaire | De Faeröer eilanden
@@ -61,11 +69,11 @@
             <p>
                 De Faeröer eilanden is een afgelegen eilandengroep in de Atlantische Oceaan. Het is een autonoom onderdeel van Denemarken en ligt tussen Schotland, Noorwegen en IJsland. Het is een prachtige bestemming, maar enige voorbereiding is wel noodzakelijk. Het is namelijk een bijzonder uitgestrekte bestemming en het weer is onvoorspelbaar. Toch is het een prachtige bestemming!
             </p>
-             <button type="button">Nu kijken ></button>
+            <button type="button">Nu kijken ></button>
         </section>
     </header>
     <main>
-<!-- content container 1 -->
+        <!--content slider 1 -->
         <div>
             <h1>Gesprek van de dag ></h1>
             <div>
@@ -107,7 +115,7 @@
                 <button id="slideRight1" type="button">&#62;</button>
             </div>
         </div>
-<!-- content container 2 -->
+        <!--content slider 2 -->
         <div>
             <h1>Uitgelicht ></h1>
             <div>
@@ -118,7 +126,7 @@
                         <figcaption>Onze Boerderij</figcaption>
                     </figure>
                     <figure>
-                       <img src="images/Sluipschutters.jpg" alt="Sluipschutters">
+                        <img src="images/Sluipschutters.jpg" alt="Sluipschutters">
                         <figcaption>Sluipschutters</figcaption>
                     </figure>
                     <figure>
@@ -149,7 +157,7 @@
                 <button id="slideRight2" type="button">&#62;</button>
             </div>
         </div>
-<!-- content container 3 -->
+        <!--content slider 3 -->
         <div>
             <h1>Meest bekeken ></h1>
             <div>
@@ -191,7 +199,7 @@
                 <button id="slideRight3" type="button">&#62;</button>
             </div>
         </div>
-<!-- categorieën container -->
+        <!--categorieën container -->
         <div>
             <h1>Populair</h1>
             <div>
@@ -212,7 +220,7 @@
                 </div>
             </div>
         </div>
-<!-- content container 4 -->
+        <!--content slider 4 -->
         <div>
             <h1>Nederlandse Series ></h1>
             <div>
@@ -239,8 +247,9 @@
                         <figcaption>PENOZA</figcaption>
                     </figure>
                     <figure>
-                       <img src="images/FlikkenMaastricht.png" alt="Flikken Maastricht">
-                        <figcaption>Flikken Maastricht</figcaption></figure>
+                        <img src="images/FlikkenMaastricht.png" alt="Flikken Maastricht">
+                        <figcaption>Flikken Maastricht</figcaption>
+                    </figure>
                     <figure>
                         <img src="images/DeLuizenMoeder.jpg" alt="De Luizenmoeder">
                         <figcaption>De Luizenmoeder</figcaption>
@@ -249,50 +258,60 @@
                 <button id="slideRight4" type="button">&#62;</button>
             </div>
         </div>
-<!-- content container 5 -->
+        <!--content slider 5 -->
         <div>
             <h1>Gemist ></h1>
             <div>
-               <button id="slideLeft5" type="button">&#60;</button>
-               <div id="container5">
-                   <figure>
+                <button id="slideLeft5" type="button">&#60;</button>
+                <div id="container5">
+                    <figure>
                         <img src="images/HetGeheimeDagboek.jpg" alt="Het geheime dagboek Van Hendrik Groen">
                         <figcaption>Hendrik Groen</figcaption>
                     </figure>
-                   <figure>
-                       <img src="images/FirstDates.jpg" alt="First Dates">
+                    <figure>
+                        <img src="images/FirstDates.jpg" alt="First Dates">
                         <figcaption>First Dates</figcaption>
-                   </figure>
-                   <figure>
-                       <img src="images/Hunted2.jpg" alt="Hunted">
+                    </figure>
+                    <figure>
+                        <img src="images/Hunted2.jpg" alt="Hunted">
                         <figcaption>Hunted</figcaption>
-                   </figure>
-                   <figure>
-                       <img src="images/EllieInDeHandel.jpg" alt="Ellie in de Handel">
+                    </figure>
+                    <figure>
+                        <img src="images/EllieInDeHandel.jpg" alt="Ellie in de Handel">
                         <figcaption>Ellie in de Handel</figcaption>
-                   </figure>
-                   <figure>
-                       <img src="images/Spoorloos.png" alt="Spoorloos Extra">
+                    </figure>
+                    <figure>
+                        <img src="images/Spoorloos.png" alt="Spoorloos Extra">
                         <figcaption>Spoorloos Extra</figcaption>
-                   </figure>
-                   <figure>
-                       <img src="images/MetHetMesOpTafel.jpg" alt="Met het mes op tafel">
+                    </figure>
+                    <figure>
+                        <img src="images/MetHetMesOpTafel.jpg" alt="Met het mes op tafel">
                         <figcaption>Met het Mes op Tafel</figcaption>
-                   </figure>
-                   <figure>
-                       <img src="images/TypischGroesbeek.jpg" alt="Typisch Groesbeek">
+                    </figure>
+                    <figure>
+                        <img src="images/TypischGroesbeek.jpg" alt="Typisch Groesbeek">
                         <figcaption>Typisch Groesbeek</figcaption>
-                   </figure>
-                   <figure>
-                       <img src="images/DoorAndereOgen.jpg" alt="Door Andere Ogen">
+                    </figure>
+                    <figure>
+                        <img src="images/DoorAndereOgen.jpg" alt="Door Andere Ogen">
                         <figcaption>Door Andere Ogen</figcaption>
-                   </figure>
-               </div>
+                    </figure>
+                </div>
                 <button id="slideRight5" type="button">&#62;</button>
             </div>
         </div>
+        <div>
+            <p>Op de hoogte blijven de nieuwste ontwikkelingen rond NPO Start? Dat kan!</p>
+            <p>Meld uzelf hieronder aan voor onze maandelijkste nieuwsbrief.</p>
+            <form action="https://codepen.io/CodingSmart/pen/JjjNQGx">
+                <label for="">E-mail:</label>
+                <input type="email" placeholder="npo@npostart.nl">
+                <button type="submit"><span>Aanmelden</span><img src="https://www.npostart.nl/images/asset_player_play.svg" alt=""></button>
+            </form>
+        </div>
     </main>
     <footer>
+        <!--De footer met vier lijsten van externe links-->
         <div>
             <div>
                 <h2>Omroepen</h2>
@@ -358,4 +377,5 @@
 </body>
 <!--Bronnen voor de afbeeldingen is https://www.npostart.nl/
 Header background-image is uit mijn eigen gallerij-->
+
 </html>

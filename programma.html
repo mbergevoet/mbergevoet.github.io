@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
         Sluipschutters gemist? Start met kijken op NPO Start
     </title>
-    <link rel="stylesheet" href="styles/stylesSubpagina.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" type="image/png" href="images/npo-logo-32x32.png">
 </head>
 <body>
-    <header>
+    <header id="tweedeheader">
+<!--De desktop navigatie-->
         <nav>
             <ul>
                 <li><a href="index.html"><img src="images/npo-logo.png" alt="npo logo"></a></li>
@@ -33,46 +35,108 @@
                 </li>
             </ul>
         </nav>
+<!--De zoekbalk die buiten beeld is gepositioneerd-->
         <div id="zoekbalk">
-            <input type="text" placeholder="Zoeken">
-            <button type="button" id="annuleerKnop"><img src="images/close.svg" alt=""></button>
+           <form action="programma.html">
+                <input type="text" placeholder="Zoeken">
+                <button type="button" id="annuleerKnop"><img src="images/close.svg" alt=""></button>
+            </form>
         </div>
         <a href="index.html"><img src="images/npo-logo.png" alt="npo logo"></a>
+<!--De mobiele navigatie met daarin twee knoppen-->
         <nav id="mobielnav">
             <button type="button" id="hamburgerknop">
-               <img src="images/menu.svg" alt="">Menu
+                <img src="images/menu.svg" alt="">Menu
             </button>
             <button type="button" id="zoekknop">
                 <img src="images/search_icon.svg" alt="">Zoeken
             </button>
         </nav>
+<!--Het hamburger menu dat uitklapt-->
         <ul id="mobielnavul">
             <li><a href="">Live</a></li>
             <li><a href="">Programma's</a></li>
             <li><a href="">Gids</a></li>
             <li><a href="">Kind</a></li>
         </ul>
-        <section>
+<!--De spotlight tekst die kort de informatie over het programma geeft-->
+        <section id="tweedespotlight">
             <h1>
                 Sluipschutters
             </h1>
             <p>
                 Sketchprogramma. Van markt tot manege, van speedboot tot catwalk, van sauna tot sekspaleis. De Sluipschutters verplaatsen zich in moordend tempo. 325 scenes. 224 locaties. Sluipschutters, ze zitten overal.
             </p>
-             <a href="https://www.npo3.nl/sluipschutters/BNN_101378789">BNNVARA • naar de website • meer op: Facebook | Twitter</a>
-            <section>
-               <button type="button">Volgen</button>
-            </section>
+            <a href="https://www.npo3.nl/sluipschutters/BNN_101378789">BNNVARA • naar de website • meer op: Facebook | Twitter</a>
+            <button type="button">Volgen</button>
         </section>
-        <section></section>
     </header>
-    <main>
-        <figure>
-            <img src="images/programma_main.PNG" alt="">
-        </figure>
-        <figure>
-            <img src="images/programma_main2.PNG" alt="">
-        </figure>
+    <main id="tweedemain">
+        <ul>
+            <li>OVERZICHT</li>
+            <li>AFLEVERINGEN</li>
+            <li>FRAGMENTEN</li>
+            <li>EXTRA'S</li>
+        </ul>
+        <form action="">
+            <select name="Seizoenen" id="Seizoenen">
+                <option value="1">Seizoen 4</option>
+                <option value="1">Seizoen 3</option>
+                <option value="1">Seizoen 2</option>
+                <option value="1">Seizoen 1</option>
+            </select>
+        </form>
+        <div>
+            <figure>
+                <img src="images/Sluipschutter_aflevering1.jpg" alt="">
+                <figcaption>
+                    <p>Aflevering 1: Flikkerninja’s en Nederlandse les</p>
+                    <p>Afl. 1 - Zo 25 aug 22:05</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/Sluipschutter_aflevering2.jpg" alt="">
+                <figcaption>
+                    <p>Aflevering 2: Rut Varkenskut en Langoustines</p>
+                    <p>Afl. 2 - Zo 1 sep 22:00</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/Sluipschutter_aflevering3.jpg" alt="">
+                <figcaption>
+                    <p>Aflevering 3: Laat je niet gek maken en Ali Baba</p>
+                    <p>Afl. 3 - Zo 8 sep 22:05</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/Sluipschutter_aflevering4.jpg" alt="">
+                <figcaption>
+                    <p>Aflevering 4: Lekker zwemmen en Moet kunnen</p>
+                    <p>Afl. 4 - Zo 15 sep 22:05</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/Sluipschutter_aflevering5.jpg" alt="">
+                <figcaption>
+                    <p>Aflevering 5: Afwassen en Printen</p>
+                    <p>Afl. 5 - Zo 22 sep 22:20</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/Sluipschutter_aflevering6.jpg" alt="">
+                <figcaption>
+                    <p>Aflevering 6: Walter en Fakir</p>
+                    <p>Afl. 6 - Zo 29 sep 22:45</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/Sluipschutter_aflevering7.jpg" alt="">
+                <figcaption>
+                    <p>Aflevering 7: Ik confiskeer uw rijtuig en Ik adem...</p>
+                    <p>Afl. 7 - Zo 6 okt 21:55</p>
+                </figcaption>
+            </figure>
+        </div>
     </main>
     <footer>
         <div>
@@ -138,4 +202,5 @@
     </footer>
     <script src="scripts/script.js"></script>
 </body>
+
 </html>
