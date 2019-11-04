@@ -170,6 +170,7 @@ main div div div figure figcaption {
 }
 
 #tweedespotlight a {
+    display: none;
     padding-left: 2.5rem;
 }
 
@@ -342,7 +343,7 @@ main div:nth-child(7) form button img {
 }
 
 #tweedemain ul li {
-    font-size: 1rem;
+    font-size: 0.8rem;
     padding-bottom: 0.5rem;
 }
 
@@ -371,30 +372,32 @@ main div:nth-child(7) form button img {
 
 #tweedemain div figure {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding-bottom: 1rem;
 }
 
 #tweedemain div figure figcaption {
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 #tweedemain div figure figcaption p {
-    padding-left: 1rem;
+    padding-left: 0rem;
+    font-size: 0.8rem;
 }
 
 #tweedemain div figure figcaption p:first-child {
-    padding-top: 1rem;
+    padding-top: 0.5rem;
 }
 
 #tweedemain div figure figcaption p:last-child {
     color: #99998E;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
 }
 
 #tweedemain div figure img {
     width: 10rem;
     height: auto;
+    background-color: blue;
 }
 
 /*----------------------------------------------------------*/
@@ -579,6 +582,30 @@ header section button:hover {
     BREAKING POINT MEDIA QUERIES
 
 --------------------------------*/
+
+@media screen and (min-width: 376px){
+
+    #tweedemain div figure {
+        flex-direction: row;
+        padding-bottom: 1rem;
+    }
+
+    #tweedemain div figure figcaption p {
+        padding-left: 1rem;
+        font-size: 1rem;
+    }
+
+    #tweedemain div figure figcaption p:first-child {
+        padding-top: 1rem;
+        font-size: 0.9rem;
+    }
+
+    #tweedemain div figure img{
+        width: 10rem;
+        height: auto;
+    }
+}
+
 @media screen and (min-width: 767px) {
 
     main,
@@ -635,7 +662,30 @@ header section button:hover {
     }
 
     #tweedespotlight a {
+        display: block;
         padding-left: 5rem;
+    }
+
+    /* MEDIA QUERIES STYLES TWEEDE MAIN */
+
+    #tweedemain ul li {
+        font-size: 1rem;
+        padding-left: 0;
+    }
+
+    #tweedemain div {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    #tweedemain div figure figcaption p:first-child {
+    font-size: 1.2rem;
+    }
+
+    #tweedemain div figure figcaption p:last-child {
+        font-size: 1rem;
     }
 
     main div:not(:nth-child(4)) div figure img {
@@ -652,13 +702,6 @@ header section button:hover {
 
     main div:nth-child(4) {
         margin-bottom: 3rem;
-    }
-
-    #tweedemain div {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        flex-wrap: wrap;
     }
 
     footer {
